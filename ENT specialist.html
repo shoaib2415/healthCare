@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <img src="https://healthicons.org/icons/svg/filled/body/dna.svg" alt="">
+              <a class="navbar-brand" href="project.html">HEALTH CARE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="find doctors.html">Find Doctors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="vedioconsultant.html">Video Consultant</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="diagnostic centers.html">Diagnostic Centers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="blogs artcles.html">Blogs/Articles</a>
+                  </li>
+                  <li>
+                    <a class="nav-link active"href="aboutus.html">About us</a>
+                  </li>
+                </ul>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                  <a class="nav-link active" href="login.html">login/signup</a>
+                   </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+   <style>    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color:azure;
+        color: white;
+    }
+    
+    .brand-title {
+        font-size: 2.5rem;
+        margin: 0.5rem;
+    }
+    
+    .navbar-links {
+        height: 100%;
+    }
+    
+    .navbar-links ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-links li {
+        list-style: none;
+    }
+    
+    .navbar-links li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+    }
+    
+    .navbar-links li:hover {
+        background-color: #555;
+    }
+    
+    .toggle-button {
+        position: absolute;
+        top: .60rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    @media (max-width: 800px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .toggle-button {
+            display: flex;
+        }
+    
+        .navbar-links {
+            display: none;
+            width: 100%;
+        }
+    
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .navbar-links ul li {
+            text-align: center;
+        }
+    
+        .navbar-links ul li a {
+            padding: .3rem 1rem;
+        }
+    
+        .navbar-links.active {
+            display: flex;
+        }
+    }
+  </STYle>
+  <script>
+  const toggleButton = document.getElementsByClassName('toggle-button')[0]
+  const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+  
+  toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+  })
+  </script>
+</div>
+  <div class="container mx-auto" style="margin-top: 100px; ">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="card" >
+        <div class="row">
+            <div class="col-md-4">
+              <img src="data:image/jpeg;base64,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"
+               style="width: 100%; height:31vh;"alt="">
+            </div>
+            <div class="col-md-8">
+              <h2 class="card-title my-1"  style="padding-left: 10px;">Dr.Chithwin</h2>
+                  <i class="fa fa-star rating-color"style="color: gold;padding-left: 10px;"></i>
+    <i class="fa fa-star rating-color" style="color: gold;padding-left: 10px;"></i>
+    <i class="fa fa-star rating-color" style="color: gold;padding-left: 10px;"></i>
+    <i class="fa fa-star rating-color" style="color: gold;padding-left: 10px;"></i>
+    <i class="fa fa-star-half-full" style="color:gold ;padding-left: 10px;"></i>
+    <p style="position:relative;left: 105px; bottom: 30px; font-weight: bold;padding-left: 70px; ">4.5</p>
+    <p style="position: relative;bottom: 40px;padding-left: 10px;">(5.5 ratings &112 reviews)</p>
+    <h5>SPECALIZATION:ENT SPECIALIST</h5>
+            </div>
+        </div>
+    </div>
+  <div class="card" >
+    <div class="row">
+          <div class="card-header"><h2 style="position: relative;left: 100px;">VIDEO CONSULTANT.</h2></div>
+          <div class="card-body">
+            <h2 class="card-title">Slots:</h2>
+            <p class="card-text">Morning: 9:00 AM-12:00 PM</p>
+            <div class="app-time">
+              <div>
+                <p>FORENOON</p>
+                <p>9:00AM to 12:00PM</p>
+                <div class="app-check">
+                  <input type="radio" class="option-input radio" name="example" />
+                  <div class="app-border">
+            
+                    <label class="app-label">9:00 AM
+                    </label>
+                  </div>
+                 
+                  <input type="radio" class="option-input radio" name="example"  />
+                  <div class="app-border">
+            
+                    <label class="app-label">10:00 AM
+                    </label>
+                  </div>
+                  
+                  <input type="radio" class="option-input radio" name="example" />
+                  <div class="app-border">
+            
+                    <label class="app-label">11:00 AM
+                    </label>
+                  </div>
+                  
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AFTERNOON</p>
+                <p>02:00PM to 05:00PM</p>
+                <div class="app-check">
+                  <input type="radio" class="option-input radio" name="example" />
+                  <div class="app-border">
+            
+                    <label class="app-label">2:00 AM
+                    </label>
+                  </div>
+                 
+                  <input type="radio" class="option-input radio" name="example"  />
+                  <div class="app-border">
+            
+                    <label class="app-label">3:00 AM
+                    </label>
+                  </div>
+                  
+                  <input type="radio" class="option-input radio" name="example" />
+                  <div class="app-border">
+            
+                    <label class="app-label">4:00 AM
+                    </label>
+                  </div>
+                  
+                  </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-primary">consult now</a>
+          </div>
+    </div>
+  </div>
+    </div>
+    <style>
+         html,body{
+background-color: blanchedalmond;
+        }
+      .app-time {
+  border: 1px solid #fff;
+  padding: 20px 30px;
+  box-shadow: 2px 4px 10px 0px #c7cacce3;
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 5px;
+  right: 0;
+  bottom: 0;
+  left: 40px;
+  height: 20px;
+  width: 20px;
+  transition: all 0.15s ease-out 0s;
+  background: #fff;
+  border: 1px solid #999;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #e5e7eb;
+}
+.option-input:checked {
+  border: 1px solid #fff;
+}
+.option-input:checked::before {
+  color: #d9486d;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: "✔";
+  display: inline-block;
+  font-size: 12px;
+  left: 4px;
+  line-height: 20px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+.app-check {
+  display: flex;
+}
+.app-border {
+  border: 1px solid #ece9e9;
+  border-radius: 7px;
+  padding: 5px 7px 5px 9px;
+  padding-left: 40px;
+  min-height: 30px;
+}
+
+.option-input.radio:checked + .app-border {
+  background: #d9486d;
+}
+.option-input.radio:disabled,
+.option-input.radio:disabled + .app-border {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.app-label {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+    </style>
+  </div>
+ 
+
+  
+  
+<footer class="bg-dark text-center text-lg-start text-white"style="position: relative;top:50px">
+
+    <div>
+  
+        <section class="text-center pt-3">
+  
+            <a class="text-white" href="#" role="button"><i class="bi bi-facebook"></i></a>
+  
+            <a class="text-white" href="#" role="button"><i class="bi bi-twitter"></i></a>
+  
+            <a class="text-white" href="#" role="button"><i class="bi bi-whatsapp"></i></a>
+  
+            <a class="text-white" href="#" role="button"><i class="bi bi-google"></i></a>
+  
+            <a class="text-white" href="#" role="button"><i class="bi bi-instagram"></i></a>
+  
+            <a class="text-white" href="#" role="button"><i class="bi bi-github"></i></a>
+        </section>
+  
+        <div class="ps-5 pt-3" style="line-height: 1em;">
+        <p>call<a href="#" style="text-decoration: none;">1800 209 8282</a></p>
+        <p>Whatsapp <a href="#" style="text-decoration: none;">+91 22 6792 7319</a>,assistance Terms & conditions</p>
+        </div>
+        <button type="button" class="btn btn-primary" style="position: relative;left: 720px;">HOME</button>
+        <div class="footer-copyright text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:<span class="text-secondary">HEALTH CARE.com</span>
+        </div>
+  
+    </div>
+  </footer>
+  
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

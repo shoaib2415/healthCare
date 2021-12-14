@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <img src="https://healthicons.org/icons/svg/filled/body/dna.svg" alt="">
+              <a class="navbar-brand" href="healthcare.html">HEALTH CARE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="find doctors.html">Find Doctors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="vedioconsultant.html">Video Consultant</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="diagnostic centers.html">Diagnostic Centers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="blogs artcles.html">Blogs/Articles</a>
+                  </li>
+                  <li>
+                    <a class="nav-link active"href="aboutus.html">About us</a>
+                  </li>
+                </ul>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                  <a class="nav-link active" href="login.html">login/signup</a>
+                   </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+   <style>    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color:azure;
+        color: white;
+    }
+    
+    .brand-title {
+        font-size: 2.5rem;
+        margin: 0.5rem;
+    }
+    
+    .navbar-links {
+        height: 100%;
+    }
+    
+    .navbar-links ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-links li {
+        list-style: none;
+    }
+    
+    .navbar-links li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+    }
+    
+    .navbar-links li:hover {
+        background-color: #555;
+    }
+    
+    .toggle-button {
+        position: absolute;
+        top: .60rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    @media (max-width: 800px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .toggle-button {
+            display: flex;
+        }
+    
+        .navbar-links {
+            display: none;
+            width: 100%;
+        }
+    
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .navbar-links ul li {
+            text-align: center;
+        }
+    
+        .navbar-links ul li a {
+            padding: .3rem 1rem;
+        }
+    
+        .navbar-links.active {
+            display: flex;
+        }
+    }
+  </STYle>
+  <script>
+  const toggleButton = document.getElementsByClassName('toggle-button')[0]
+  const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+  
+  toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+  })
+  </script>
+
+      <div class="container mt-5">
+  <div class="card background-color:blue">
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="w-100 h-100" src="data:image/jpeg;base64,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" alt="">
+
+        </div>
+        <div class="col-lg-8">
+            <h2>VIDEO CONSULT</h2>
+            <h3>Take Online Doctor consultation</h3>
+            <h4>* Verified doctors</h4>
+            <h4>* Digital prescription</h4>
+            <h4>* Free Followups</h4>
+            <button class="btn btn-primary">Consult now</button>
+         
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+<div class="container mt-5">
+    <div></div>
+
+</div>
+ <h1 class="mt-2 mx-auto">Benefits of online consultation</h1>
+ <div class="container mt-5">
+    
+    <div class="card-group">
+        <div class="col-lg-5 shadow">
+
+    
+
+        <div class="row">
+            
+            <div class="col-lg-4">
+                <img class="w-100 h-100" src="https://thumbs.dreamstime.com/b/online-doctor-app-health-phone-mockup-get-consultation-mobile-stethoscope-cell-blue-background-copy-space-209196925.jpg" alt="">
+                </div>
+                <div class="col-lg-8">
+                <h3>Consult Top Doctors 24x7</h3>
+                <p class="mt-2">Connect instanly with a 24x7 specilaist or choose to video visit a particular doctor. </p>
+              
+            </div> 
+        </div>
+        </div>
+        
+    
+<div class="col-lg-2"></div>
+
+       
+        
+            <div class="col-lg-5 shadow">
+                  <div class="row">
+            
+
+            
+            <div class="col-lg-4">
+                <img  class="w-100 h-100"src="data:image/jpeg;base64,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" alt="">
+                
+            </div>
+            <div class="col-lg-8">
+                <h3>Convient and easy</h3>
+                <p> start an instant consulation within 2 minutes or do video consulation at the scheduled time. </p>
+               </div>
+               </div>
+               </div>
+               <div class="container mt-5">
+    
+                <div class="card-group">
+                    <div class="col-lg-5 shadow">
+                    <div class="row">
+                        
+                        <div class="col-lg-4">
+                            <img class="w-100 h-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXAJzSsCQ9QforofcfRox966hfPCBSjLeUPA&usqp=CAU" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                            <h3>Similar clinic experience </h3>
+                            <p class="mt-2">Experience is the clinic consulation through a video call with the doctor. video consulation is available only on app. </p>
+                          
+                        </div> 
+                    </div>
+                    </div>
+                    
+                
+            <div class="col-lg-2"></div>
+                    
+                        <div class="col-lg-5 shadow">
+                              <div class="row">
+                        <div class="col-lg-4">
+                            <img  class="w-100 h-100"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw9O1Q_BgtppYe3ATsMr9SIJz2ZuE5wT9YCQ&usqp=CAU" alt="">    
+                        </div>
+                        <div class="col-lg-8">
+                            <h3>Free follow up</h3>
+                            <p> Get a valid digital presciption and a  7-day . free follow-up for further clarifications.</p>
+                           </div>
+                           </div>
+                           </div>
+
+
+                           <!--benefits end here-->
+<!--customers review start-->
+                           <section>
+                            <div class="testimonials">
+                                <h2 class="title">Some words from our costumers</h2>
+                                <p class="description">About online doctor consultancy</p>
+                              
+                                <div class="slider-container">
+                                  <div class="slider">
+                                    <div class="slide-box">
+                                      <!-- Testi One -->
+                                      <p class="comment">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                      </p>
+                                      <img src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" />
+                                      <h3 class="name">Albert Sinelly</h3>
+                                      <h4 class="job">Founder Of Devoker Company</h4>
+                                    </div>
+                                    <div class="slide-box">
+                                      <!-- Testi Two -->
+                                      <p class="comment">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                        magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.
+                                      </p>
+                                      <img src="https://images.unsplash.com/photo-1627541718143-1adc1b582e62?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bXVzbGltfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+                                      <h3 class="name">Hirok Meryam</h3>
+                                      <h4 class="job">Full stack Developer, Speaker</h4>
+                                    </div>
+                                    <div class="slide-box">
+                                      <!-- Testi Three -->
+                                      <p class="comment">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                        magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.
+                                      </p>
+                                      <img src="https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGZhY2V8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+                                      <h3 class="name">Sebastian Sert</h3>
+                                      <h4 class="job">UX/UI Designer, Phtographer</h4>
+                                    </div>
+                                  </div>
+                              
+                                  <a href="#!" class="control-slider btn-left">
+                                    <i class="fas fa-chevron-left"></i>
+                                  </a>
+                                  <a href="#!" class="control-slider btn-right">
+                                    <i class="fas fa-chevron-right"></i>
+                                  </a>
+                                </div>
+                              </div>
+                              <style>
+                                  @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
+
+.testimonials {
+  background: #fff;
+  text-align: center;
+  width: 95%;
+  max-width: 1400px;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+.title {
+  font-size: 1.5rem;
+}
+.description {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.slider-container {
+  margin-top: 2rem;
+  margin: 2rem auto 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  flex: 0 0 1;
+  width: 300%; /* Depends On slide-box Length * 100 */
+  transition: all 0.5s linear;
+}
+.slide-box {
+  padding: 0 80px;
+}
+.slide-box .comment {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.86rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.4px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  font-weight: 400;
+}
+.slide-box .comment::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.slide-box img {
+  max-width: 60px;
+  border-radius: 50%;
+}
+.slide-box .name {
+  font-size: 1rem;
+}
+.slide-box .job {
+  font-size: 0.7rem;
+  color: #8d8e97;
+  font-weight: 400;
+}
+
+.control-slider {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  line-height: 40px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+.btn-left {
+  left: 10px;
+}
+.btn-right {
+  right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .slide-box {
+    padding: 0 55px;
+  }
+ </style>
+ <script>
+    const sliderElm = document.querySelector(".slider-container .slider ");
+const btnLeft = document.querySelector(".slider-container .btn-left ");
+const btnRight = document.querySelector(".slider-container .btn-right ");
+
+const numberSliderBoxs = sliderElm.children.length;
+let idxCurrentSlide = 0;
+
+// Functions:
+function moveSlider() {
+  let leftMargin = (sliderElm.clientWidth / numberSliderBoxs) * idxCurrentSlide;
+  sliderElm.style.marginLeft = -leftMargin + "px";
+  console.log(sliderElm.clientWidth, leftMargin);
+}
+function moveLeft() {
+  if (idxCurrentSlide === 0) idxCurrentSlide = numberSliderBoxs - 1;
+  else idxCurrentSlide--;
+
+  moveSlider();
+}
+function moveRight() {
+  if (idxCurrentSlide === numberSliderBoxs - 1) idxCurrentSlide = 0;
+  else idxCurrentSlide++;
+
+  moveSlider();
+}
+
+// Event Listeners:
+btnLeft.addEventListener("click", moveLeft);
+btnRight.addEventListener("click", moveRight);
+window.addEventListener("resize", moveSlider);
+
+</script>
+                           </section>
+                           <h1> FAQs</h1>
+                              <div class="container mt-6">
+    
+                                <div class="card-group"> 
+                                            
+                                    <div class="col-lg-5 shadow">
+                            
+                                
+                            
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-12">
+
+                                            <h3> What is online doctor  consultation?</h3>
+                                            <p>Online doctor consultation or Online medical consultation is a  method to
+                                                connect patients and doctors virtually .it is a convenient and easy way to
+                                                get online doctor advice using doctor apps or platforms ,and the internet.
+                                            </p>
+
+                                            
+                                            </div>
+                                          
+                                    </div>
+                                    </div>
+                                    
+                                
+                            <div class="col-lg-1"></div>
+                            
+                                   
+                                    
+                                        <div class="col-lg-5 shadow">
+                                              <div class="row">
+                                        
+                            
+                                        
+                                        <div class="col-lg-12">
+                                            <h3>How do i start online consultation  is very simple on  app?</h3>
+                                            <p> Starting an online doctor consultation is very simple . follow these 4 simple steps.</p>
+                                            <ul> 
+                                                <li> Choose your health concern.</li>
+                                                <li> Connect with a doctor within 2 minutes.</li>
+                                                <li> Ask your queries to the doctor via audio or video call.</li>
+                                                <li> Get a valid online doctor prescription and a 3-day-free online doctor consultation.</li>
+                                            </ul>
+
+                                            
+                                        </div>
+                                        
+                                           </div>
+                                           </div>
+                                           <div class="container mt-6">
+    
+                                            <div class="card-group"> 
+                                                        
+                                                <div class="col-lg-5 shadow">
+                                        
+                                            
+                                        
+                                                <div class="row">
+                                                    
+                                                    <div class="col-lg-12">
+            
+                                                        <h3>Is online doctor consultation safe?</h3>
+                                                        <p>
+                                                            The privacy of our patients is critical to us, and thus, we are compliant with industry standards 
+                                                            like ISO 27001.Rest assured that your online consultation with a doctor is compeletely safe
+                                                            and secured with 256-bit encryption.
+                                                        
+                                                        </p>
+            
+                                                        
+                                                        </div>
+                                                      
+                                                </div>
+                                                </div>
+                                                
+                                            
+                                        <div class="col-lg-1"></div>
+                                        
+                                               
+                                                
+                                                    <div class="col-lg-5 shadow">
+                                                          <div class="row">
+                                                    
+                                        
+                                                    
+                                                    <div class="col-lg-12">
+                                                        <h3>Are your online doctors qualified?</h3>
+                                                        <p>we follow a strict verification process for every doctor providing online 
+                                                            medical services. our team manually verifies necessary documents ,registrations 
+                                                            and certifications for every
+                                                             </p>
+                                                       
+                                                        
+                                                    </div>
+                                                    
+                                                       </div>
+                                                       </div>
+                                            </div>
+                                           </div>
+                                </div>
+                              </div>
+                </div>
+               </div>
+    </div>
+ </div>
+ 
+ <footer class="bg-dark text-center text-lg-start text-white"style="position: relative;top: 150px;">
+
+<div>
+
+    <section class="text-center pt-3">
+
+        <a class="text-white" href="#" role="button"><i class="bi bi-facebook"></i></a>
+
+        <a class="text-white" href="#" role="button"><i class="bi bi-twitter"></i></a>
+
+        <a class="text-white" href="#" role="button"><i class="bi bi-whatsapp"></i></a>
+
+        <a class="text-white" href="#" role="button"><i class="bi bi-google"></i></a>
+
+        <a class="text-white" href="#" role="button"><i class="bi bi-instagram"></i></a>
+
+        <a class="text-white" href="#" role="button"><i class="bi bi-github"></i></a>
+    </section>
+
+    <div class="ps-5 pt-3" style="line-height: 1em;">
+    <p>call<a href="#" style="text-decoration: none;">1800 209 8282</a></p>
+    <p>Whatsapp <a href="#" style="text-decoration: none;">+91 22 6792 7319</a>,assistance Terms & conditions</p>
+    </div>
+    <button type="button" class="btn btn-primary" style="position: relative;left: 720px;">HOME</button>
+    <div class="footer-copyright text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:<span class="text-secondary">HEALTH CARE.com</span>
+    </div>
+
+</div>
+</footer>
+                           
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
+

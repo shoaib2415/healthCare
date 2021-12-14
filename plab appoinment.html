@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <img src="https://healthicons.org/icons/svg/filled/body/dna.svg" alt="">
+              <a class="navbar-brand" href="healthcare.html">HEALTH CARE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="find doctors.html">Find Doctors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="vedioconsultant.html">Video Consultant</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="diagnostic centers.html">Diagnostic Centers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="blogs artcles.html">Blogs/Articles</a>
+                  </li>
+                  <li>
+                    <a class="nav-link active"href="aboutus.html">About us</a>
+                  </li>
+                </ul>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                  <a class="nav-link active" href="login.html">login/signup</a>
+                   </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+   <style>    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color:azure;
+        color: white;
+    }
+    
+    .brand-title {
+        font-size: 2.5rem;
+        margin: 0.5rem;
+    }
+    
+    .navbar-links {
+        height: 100%;
+    }
+    
+    .navbar-links ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-links li {
+        list-style: none;
+    }
+    
+    .navbar-links li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+    }
+    
+    .navbar-links li:hover {
+        background-color: #555;
+    }
+    
+    .toggle-button {
+        position: absolute;
+        top: .60rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    @media (max-width: 800px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .toggle-button {
+            display: flex;
+        }
+    
+        .navbar-links {
+            display: none;
+            width: 100%;
+        }
+    
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .navbar-links ul li {
+            text-align: center;
+        }
+    
+        .navbar-links ul li a {
+            padding: .3rem 1rem;
+        }
+    
+        .navbar-links.active {
+            display: flex;
+        }
+    }
+  </STYle>
+  </script>
+  
+
+    <div class="row m-md-5 m-3 ">
+        <div class="col-lg-4 bg-blue py-5 px-5">
+            <h4 class="text-center text-white mb-4">Contact Details</h4>
+            <div class="row">
+                <div class=" col-lg-4 col-md-5 offset-lg-0 offset-md-2 col-4 ">
+                    <p class="fw-bold">Call Us:</p>
+                </div>
+                <div class=" col-lg-8 col-md-5 col-8">
+                    <p>+2 392 3929 210</p>
+                </div>
+                <div class=" col-lg-4 col-md-5 offset-lg-0 offset-md-2 col-4">
+                    <p class="fw-bold">Location:</p>
+                </div>
+                <div class=" col-lg-8 col-md-5 col-8">
+                    <p>San Francisco, California,USA</p>
+                </div>
+                <div class=" col-lg-4 col-md-5 offset-lg-0 offset-md-2 col-4">
+                    <p class="fw-bold">Work hours:</p>
+                </div>
+                <div class=" col-lg-8 col-md-5 col-8">
+                    <p class="">Monday-Friday 8:00AM-8:00PM Sunday-closed</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 bg-red py-5 px-5">
+            <form action="">
+                <h4 class="text-center text-white mb-4">Make An Appointment</h4>
+                <div class="row">
+                    <div class="col-md-6 col-12 my-md-0 my-2"> <input type="text" class="form-control bg-darkred" placeholder="Your Full Name"> </div>
+                    <div class="col-md-6 col-12 my-md-0 my-2 "> <input type="email" class="form-control bg-darkred" placeholder="Your Email"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-12 my-2"> <input type="text" class="form-control bg-darkred" placeholder="Your Phone Number"> </div>
+                    <div class="col-md-6 col-12 my-2"> <select name="" id="dropDown" class="form-control bg-darkred shadow-none">
+                            <option value="" hidden selected>TESTS</option>
+                            <option value="service 1">Amniocentesis</option>
+                            <option value="service 1">Blood Analysis</option>
+                            <option value="service 1">KIDNEY FUNCTION TEST</option>
+                            <option value="service 1">LIVER FUNCTION TEST</option>
+                            <option value="service 1">LUMBAR PUNCTURE</option>
+                            <option value="service 1">MALABSORPTION TEST</option>
+                            <option value="service 1">DIABETIC TEST</option>
+                            <option value="service 1">URINALYSIS</option>
+                        </select> </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Amniocentesis 
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                KIDNEY FUNCTION TEST
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                LIVER FUNCTION TEST
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                LUMBAR PUNCTURE
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                MALABSORPTION TEST
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                PREGANANCY TEST
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                URINALYSIS
+                            </label>
+                          </div>
+                    <div class=""> <textarea cols="10" rows="3" class="form-control bg-darkred shadow-none" placeholder="Message"></textarea> </div>
+                    <div class=" my-2"> <button class="btn w-100 shadow-none text-uppercase msg-btn">Send Message</button> </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-4 bg-blue py-5 px-5">
+            <h4 class="text-center text-white mb-4">Maintenance Services</h4>
+            <div class="col">
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa a minima explicabo similique, ipsum quam quibusdam quae. Assumenda quibusdam molestiae eveniet qui voluptatum nesciunt vero molestias quas sint quia? Ratione?</p>
+            </div>
+            <div class=""><button class="btn my-3 shadow-none text-uppercase">More Services</button></div>
+        </div>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+.bg-blue {
+    background-color: #054d7c
+}
+
+.bg-red {
+    background-color: #d80606
+}
+
+.bg-darkred {
+    background-color: #a70f0f;
+    border: none;
+    color: #fff !important
+}
+
+p {
+    color: #ddd;
+    font-weight: 500;
+    font-size: 13px
+}
+
+select {
+    font-size: 13px !important
+}
+
+#inputState:focus {
+    background-color: #a70f0f;
+    color: #fff;
+    box-shadow: none
+}
+
+::placeholder {
+    color: white !important;
+    font-size: 13px
+}
+
+input:focus {
+    background-color: #a70f0f !important;
+    color: #fff;
+    box-shadow: none !important
+}
+
+textarea:focus {
+    background-color: #a70f0f !important
+}
+
+#dropDown {
+    height: 100%;
+    padding-bottom: 8px
+}
+
+#dropDown.form-control {
+    appearance: revert;
+    color: #fff
+}
+
+#dropDown.form-control:focus {
+    background-color: #a70f0f
+}
+
+.btn {
+    background-color: #fff;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    font-weight: 600
+}
+
+.msg-btn {
+    height: 70px
+}
+
+.btn:hover {
+    background-color: #efefef
+}
+    </style> 
+    <footer class="bg-dark text-center text-lg-start text-white"style="position: relative;top: 150px;">
+
+        <div>
+      
+            <section class="text-center pt-3">
+      
+                <a class="text-white" href="#" role="button"><i class="bi bi-facebook"></i></a>
+      
+                <a class="text-white" href="#" role="button"><i class="bi bi-twitter"></i></a>
+      
+                <a class="text-white" href="#" role="button"><i class="bi bi-whatsapp"></i></a>
+      
+                <a class="text-white" href="#" role="button"><i class="bi bi-google"></i></a>
+      
+                <a class="text-white" href="#" role="button"><i class="bi bi-instagram"></i></a>
+      
+                <a class="text-white" href="#" role="button"><i class="bi bi-github"></i></a>
+            </section>
+      
+            <div class="ps-5 pt-3" style="line-height: 1em;">
+            <p>call<a href="#" style="text-decoration: none;">1800 209 8282</a></p>
+            <p>Whatsapp <a href="#" style="text-decoration: none;">+91 22 6792 7319</a>,assistance Terms & conditions</p>
+            </div>
+            <a class="btn btn-primary" href="healthcare.html" role="button"style="position: relative;left: 720px;">HOME</a>
+            <div class="footer-copyright text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:<span class="text-secondary">HEALTH CARE.com</span>
+            </div>
+      
+        </div>
+      </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+    </html>
+</body>
+</html>

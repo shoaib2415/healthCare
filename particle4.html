@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <img src="https://healthicons.org/icons/svg/filled/body/dna.svg" alt="">
+              <a class="navbar-brand" href="healthcare.html">HEALTH CARE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="find doctors.html">Find Doctors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="vedioconsultant.html">Video Consultant</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="diagnostic centers.html">Diagnostic Centers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="blogs artcles.html">Blogs/Articles</a>
+                  </li>
+                  <li>
+                    <a class="nav-link active"href="aboutus.html">About us</a>
+                  </li>
+                </ul>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                  <a class="nav-link active" href="login.html">login/signup</a>
+                   </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+   <style>    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color:azure;
+        color: white;
+    }
+    
+    .brand-title {
+        font-size: 2.5rem;
+        margin: 0.5rem;
+    }
+    
+    .navbar-links {
+        height: 100%;
+    }
+    
+    .navbar-links ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-links li {
+        list-style: none;
+    }
+    
+    .navbar-links li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+    }
+    
+    .navbar-links li:hover {
+        background-color: #555;
+    }
+    
+    .toggle-button {
+        position: absolute;
+        top: .60rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    @media (max-width: 800px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .toggle-button {
+            display: flex;
+        }
+    
+        .navbar-links {
+            display: none;
+            width: 100%;
+        }
+    
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .navbar-links ul li {
+            text-align: center;
+        }
+    
+        .navbar-links ul li a {
+            padding: .3rem 1rem;
+        }
+    
+        .navbar-links.active {
+            display: flex;
+        }
+    }
+  </STYle>
+  <script>
+  const toggleButton = document.getElementsByClassName('toggle-button')[0]
+  const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+  
+  toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+  })
+  </script>
+
+<div class="container my-5">
+    <div style="max-width: 700px; top: -80px;" class="mx-auto text-secondary">
+      <div>
+          <small>
+            <a href="#" class="text-primary">Wellness articles</a>
+        </small>
+      </div>
+      <h1 class="font-weight-bold text-dark">Tips for helping your child with diabetes
+
+  </h1>
+      <p class="my-2" style="line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+      
+      <div class="my-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+        <img src="https://avatars0.githubusercontent.com/u/39916324?s=460&u=602ca47fcce463981a2511a21148236f304ec934&v=4" style="width: 50px;"/>
+        <small class="ml-2">
+          <a href="#" class="text-primary d-block">Ahmad Sultani</a>
+          <span>Aug 18</span>
+        </small>
+      </div>
+        <div class="text-primary">
+           <a href="/#" class="mx-1">
+              <svg fill="currentColor" width="30px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                 <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                    5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
+                    -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
+                    0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
+                    -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166
+                    0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929
+                    -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379
+                    0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009
+                    -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049
+                    -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838
+                    1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
+                    -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
+                    6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
+                    0.771,-0.67 1.054,-1.093Z"></path>
+              </svg>
+           </a>
+           <a href="/#" class="w-6 mx-1">
+              <svg fill="currentColor" width="30px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                 <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                    5.373,-12 12,-12c6.627,0 12,5.373
+                    12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
+                    0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
+                    -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
+              </svg>
+           </a>
+           <a href="/#" class="w-6 mx-1">
+              <svg fill="currentColor" width="30px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                 <path id="Shape" d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
+                    3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
+                    -0.9,4.7c-0.6,1.5 -1.5,2.8 -2.6,3.8c-1.1,1 -2.3,1.9 -3.8,2.6c-1.5,0.7
+                    -3.1,0.9 -4.7,0.9c-1.6,0 -3.2,-0.3 -4.7,-0.9c-1.5,-0.6 -2.8,-1.5
+                    -3.8,-2.6c-1,-1.1 -1.9,-2.3 -2.6,-3.8c-0.7,-1.5 -0.9,-3.1 -0.9,-4.7c0,-1.6
+                    0.3,-3.2 0.9,-4.7c0.6,-1.5 1.5,-2.8 2.6,-3.8c1.1,-1 2.3,-1.9
+                    3.8,-2.6Zm-0.3,7.1c0.6,0 1.1,-0.2 1.5,-0.5c0.4,-0.3 0.5,-0.8 0.5,-1.3c0,-0.5
+                    -0.2,-0.9 -0.6,-1.2c-0.4,-0.3 -0.8,-0.5 -1.4,-0.5c-0.6,0 -1.1,0.2
+                    -1.4,0.5c-0.3,0.3 -0.6,0.7 -0.6,1.2c0,0.5 0.2,0.9 0.5,1.3c0.3,0.4 0.9,0.5
+                    1.5,0.5Zm1.5,10l0,-8.5l-3,0l0,8.5l3,0Zm11,0l0,-4.5c0,-1.4 -0.3,-2.5
+                    -0.9,-3.3c-0.6,-0.8 -1.5,-1.2 -2.6,-1.2c-0.6,0 -1.1,0.2 -1.5,0.5c-0.4,0.3
+                    -0.8,0.8 -0.9,1.3l-0.1,-1.3l-3,0l0.1,2l0,6.5l3,0l0,-4.5c0,-0.6 0.1,-1.1
+                    0.4,-1.5c0.3,-0.4 0.6,-0.5 1.1,-0.5c0.5,0 0.9,0.2 1.1,0.5c0.2,0.3 0.4,0.8
+                    0.4,1.5l0,4.5l2.9,0Z"></path>
+              </svg>
+           </a>
+        </div>
+      </div>
+      </div>
+    <img class="w-100 my-3" src=" https://www.geisinger.org/-/media/OneGeisinger/Images/ghs/health-and-wellness/Wellness-Articles/2021/GettyImages-1277628493.jpg?w=0&h=0&as=1&hash=C6AEC05433BD8B9E45948CFF6F3D9E84FA675C55" />
+    
+    <div style="max-width: 700px; top: -80px;" class="mx-auto text-secondary">
+      <p class="my-2" style="line-height: 2;">
+        If your child has juvenile diabetes, you can help them feel their best.
+        Your child’s endocrine system has an important job to do. It’s responsible for creating and regulating the hormones their body uses to control their metabolism and development.
+        
+        When your child has juvenile diabetes, the hormone (insulin) that regulates metabolism is off balance. But there’s good news.
+        
+        “If your child was recently diagnosed or has been living with diabetes, there are some key things you can do to help them manage it,” says Dr. Mushtaq Ahmed Godil, a specialist in pediatric endocrinology at Geisinger.
+        
+        Helping a child live with diabetes goes beyond teaching them to manage it. It’s also about helping them make healthy food choices, get regular physical activity and maybe even cope with social factors at school. It takes a team — but when you’re all working together, your child can manage their diabetes while still enjoying being a kid.
+        
+        Keep school in the loop
+        The first step? Work with your child’s school.
+        
+        “Start by letting staff know that your child has diabetes, Dr. Godil says. “This may mean that they need to visit the nurse’s office more often to test their blood or eat a snack during class to manage their blood sugar levels.”
+        
+        A key school player you might not think of: Your child’s physical education instructor. Gym teachers need to keep an eye on your child’s activity level needs and know what to watch for if your child’s sugar drops during class. While eating raises blood sugar levels, exercising can lower them, so keeping everyone at your child’s school in the loop is an important part of their care.
+        
+        Common signs that a child’s blood sugar is dropping can include:
+        
+        Anger, stubbornness or sadness
+        Blurred vision
+        Dizziness and difficulty concentrating
+        Hunger or nausea
+        Irritability or impatience
+        Nervousness or anxiety
+        Shakiness
+        Sweating, chills or clamminess
+        Weakness or fatigue
+        
+        Teach your child how to manage sugar levels
+        Even a young child can start to learn to manage their blood sugar levels correctly. So be sure to talk with them about the signs of a drop or spike in blood sugar.
+        
+        “The symptoms can be different from one child to another, so if you notice your child acts or looks a certain way, let them know — as well as their teachers,” says Dr. Godil.
+        
+        Make a plan with your child and let the school know what that plan looks like. It might consist of:
+        
+        Monitoring blood sugar levels by testing regularly
+        Eating on a certain schedule
+        Adjusting insulin as needed to account for blood sugar levels and activity
+        Exercising regularly
+        
+        Talk about their feelings
+        Is your kid sensitive to what others say to them? If so, it could impact what they do. For example, if others comment on your child checking their blood sugar levels, they might stop checking them.
+        
+        “Talk with your child about bullying and tell them they can always come to you if they’re being picked on,” says Dr. Godil. If someone is picking on them, empower them to walk away and ignore the bully — and also to tell an adult.
+        
+        Open communication between you, your child and their doctor is key to helping your child understand and manage their diabetes.
+        
+        When your child learns they have diabetes, feelings of confusion, sadness or anger are totally normal. “Encourage them to talk with you,” says Dr. Godil. “And let them know they can ask you, and their doctor, any questions they may have about diabetes..</p>
+      <br>
+      <br>
+  </div>
+  <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+  </style>
+  
+<footer class="bg-dark text-center text-lg-start text-white"style="position: relative;top: 600px;">
+
+    <div>
+  
+        <section class="text-center pt-3">
+  
+            <a class="text-white" href="#" role="button"><i class="bi bi-facebook"></i></a>
+  
+            <a class="text-white" href="#" role="button"><i class="bi bi-twitter"></i></a>
+  
+            <a class="text-white" href="#" role="button"><i class="bi bi-whatsapp"></i></a>
+  
+            <a class="text-white" href="#" role="button"><i class="bi bi-google"></i></a>
+  
+            <a class="text-white" href="#" role="button"><i class="bi bi-instagram"></i></a>
+  
+            <a class="text-white" href="#" role="button"><i class="bi bi-github"></i></a>
+        </section>
+  
+        <div class="ps-5 pt-3" style="line-height: 1em;">
+        <p>call<a href="#" style="text-decoration: none;">1800 209 8282</a></p>
+        <p>Whatsapp <a href="#" style="text-decoration: none;">+91 22 6792 7319</a>,assistance Terms & conditions</p>
+        </div>
+        <button type="button" class="btn btn-primary" style="position: relative;left: 720px;">HOME</button>
+        <div class="footer-copyright text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:<span class="text-secondary">HEALTH CARE.com</span>
+        </div>
+  
+    </div>
+  </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
