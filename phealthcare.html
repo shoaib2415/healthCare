@@ -15,153 +15,102 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   </head>
-   <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid">
-                <img src="https://healthicons.org/icons/svg/filled/body/dna.svg" alt="">
-              <a class="navbar-brand" href="healthcare.html">HEALTH CARE</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="find doctors.html">Find Doctors</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="vedioconsultant.html">Video Consultant</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="diagnostic centers.html">Diagnostic Centers</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="blogs artcles.html">Blogs/Articles</a>
-                  </li>
-                  <li>
-                    <a class="nav-link active"href="aboutus.html">About us</a>
-                  </li>
-                </ul>
-                </ul>
-                
-                <ul class="navbar-nav ms-auto">
-                  <a class="nav-link active" href="login.html">login/signup</a>
-                   </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    
-   <style>    
-    body {
-        margin: 0;
-        padding: 10;
-        background-color: bisque;
-    }
-    
-    .navbar {
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        align-items: center;
-        background-color:azure;
-        color: white;
-    }
-    
-    .brand-title {
-        font-size: 2.5rem;
-        margin: 0.5rem;
-    }
-    
-    .navbar-links {
-        height: 100%;
-    }
-    
-    .navbar-links ul {
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .navbar-links li {
-        list-style: none;
-    }
-    
-    .navbar-links li a {
-        display: block;
-        text-decoration: none;
-        color: white;
-        padding: 1rem;
-    }
-    
-    .navbar-links li:hover {
-        background-color: #555;
-    }
-    
-    .toggle-button {
-        position: absolute;
-        top: .60rem;
-        right: 1rem;
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 21px;
-    }
-    
-    .toggle-button .bar {
-        height: 3px;
-        width: 100%;
-        background-color: white;
-        border-radius: 10px;
-    }
-    
-    @media (max-width: 800px) {
-        .navbar {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    
-        .toggle-button {
-            display: flex;
-        }
-    
-        .navbar-links {
-            display: none;
-            width: 100%;
-        }
-    
-        .navbar-links ul {
-            width: 100%;
-            flex-direction: column;
-        }
-    
-        .navbar-links ul li {
-            text-align: center;
-        }
-    
-        .navbar-links ul li a {
-            padding: .3rem 1rem;
-        }
-    
-        .navbar-links.active {
-            display: flex;
-        }
-    }
-  </STYle>
-  <script>
-  const toggleButton = document.getElementsByClassName('toggle-button')[0]
-  const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<header class="header">
   
-  toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
+<nav class="navbar navbar-expand-lg navbar-light ms-auto">
+    <div class="container-fluid">
+        <img src="https://healthicons.org/icons/svg/filled/body/dna.svg" alt="">
+      <a class="navbar-brand" href="#">HEALTH CARE</a>
+      <span></span>
+      <span></span>
+<span></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Find Doctors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vedio consultant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Diagnostic Centers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs/Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+        
+          </div>
+    </div>
+  </nav>
+  <style>
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+      {
+      box-sizing: border-box;
+  }
+  
+  body {
+      margin: 0;
+      padding-top: o;
+      background-color: blanchedalmond;
+  }
+  
+  .navbar {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      background-color:azure;
+      color:black;
+
+  }
+  
+  .brand-title {
+      font-size: 2.5rem;
+      margin: 0.5rem;
+  }
+      .profile-menu { 
+  .dropdown-menu{
+    right: 0;
+    left: unset;
+  }
+  .fa-fw{
+    margin-right: 8spx;
+  }  
+}
+.toggle-change{
+    &::after {
+    border-top: 0;
+    border-bottom: .2sem solid;
+    }
+} 
+  </style>
+  <script>
+      
+      document.querySelectorAll('.dropdown-toggle').forEach(item => {
+  item.addEventListener('click', event => {
+ 
+    if(event.target.classList.contains('dropdown-toggle') ){
+      event.target.classList.toggle('toggle-change');
+    }
+    else if(event.target.parentElement.classList.contains('dropdown-toggle')){
+      event.target.parentElement.classList.toggle('toggle-change');
+    }
   })
-  </script>
-     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+});
+</script>
+
+
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel mt-4" >
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -280,7 +229,6 @@
     </div>
 
 </div>
-
 <div class="container">
   <div class="grid">
       <div class="card">
@@ -503,7 +451,6 @@ a.read_more:hover {
 
 }
 </style>
-
   <footer class="bg-dark text-center text-lg-start text-white"style="position: relative;top: 150px;">
 
     <div>
